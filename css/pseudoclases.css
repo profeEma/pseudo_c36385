@@ -1,0 +1,83 @@
+/* VARIABLES CSS */
+:root {
+	--fondoPrimario: #FCF7F8;
+	--colorOscuro: #1A1E21;
+	--azul: #3860EC;
+	--colorPrimario: yellow;
+}
+
+body {
+	background: var(--fondoPrimario);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+ul {
+	margin: 0;
+}
+
+.contenedor {
+	max-width: 500px;
+	width: 90%;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.titulo {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--colorOscuro);
+	margin-bottom: 20px;
+}
+
+.grupo {
+	padding: 60px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li {
+	background: #dbdbdb;
+	padding: 10px;
+}
+
+/* PSEUDO */
+a:hover{
+	background-color: red;
+}
+a:active{
+	background-color: var(--colorPrimario);
+	font-size: 40px;
+}
+a:visited{
+	color: var(--colorPrimario);
+}
+/* parrafos */
+.parrafos p:first-child{
+	background-color: var(--colorOscuro);
+}
+.parrafos p:last-child{
+	background-color: yellow;
+}
+/* elementos */
+
+/* lista */
+.lista li:nth-child(2n){
+	background-color: black;
+	color: white;
+}
+.lista li:nth-last-child(2n){
+	background-color: grey;
+	color: black;
+}
